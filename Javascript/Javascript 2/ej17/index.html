@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let array = [12,15,52,1,43,23,32,11]
+
+        let arrayMas50 = array.filter(item => item > 50)
+        console.log(arrayMas50)
+
+        let arrayMas36 = array.filter(item => item > 36)
+        let arraySumaMas36 = arrayMas36.reduce((sum, item) => sum + item)
+        console.log(arraySumaMas36)
+
+        let sumaArray = array.reduce(
+            (sum, item) => sum + item
+        )
+        console.log(sumaArray)
+
+        
+
+    </script>
+</body>
+</html>

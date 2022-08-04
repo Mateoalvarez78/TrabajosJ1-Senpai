@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("Ingrese un numero"));
+        let num2 = parseInt(prompt("Ingrese el segundo número"));
+        let suma;
+        let diferencia;
+        let producto;
+        let division;
+
+        if (num1 > num2) {
+            suma = num1 + num2
+            diferencia = num1 - num2
+
+            document.write("La suma de ambos numeros es: ", suma, "<br>") 
+            document.write("La diferencia es de: ", diferencia)
+        }
+
+        else if (num2 > num1) {
+            producto = num1 * num2
+            division = num1 / num2
+
+            document.write("La multiplicación de ambos numeros es: ", producto, "<br>")
+            document.write("La division es de: ", division)
+        }
+
+    </script>
+</body>
+</html>

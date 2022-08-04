@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = parseInt(prompt("Ingrese mts2 de a"));
+        let c = parseInt(prompt("Ingrese mts2 de c"));
+        let base = parseInt(prompt("Ingrese la mts2 de b"));
+        let altura = a - c;
+        let areaTriaungulo = (base * altura) / 2
+            console.log(areaTriaungulo)
+        let areaRectangulo = base * altura
+            console.log(areaRectangulo)
+        let totalArea = areaRectangulo + areaTriaungulo
+
+        document.write("El area en mts es de: ", totalArea)
+
+    </script>
+</body>
+</html>

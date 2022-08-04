@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let contador = 0;
+        let base;
+        let altura;
+        
+        for (let i = 1; i <= 3; i++) {
+             base = parseInt(prompt("Ingrese la base del tríangulo "))
+             altura = parseInt(prompt("Ingrese la altura del triangulo"))
+            let superficie = (base * altura) / 2
+
+            
+            if (superficie > 12) {
+                contador++
+            }
+
+            document.write("Triangulo ", i , " tiene una base de: ", base, " una altura de ", altura, " y una superficie de: ", superficie, "<br>")
+        }
+            
+        document.write("Cantidad de triangulos con una superficie mayor a 12: ", contador)
+                
+
+            
+
+       
+        
+
+
+    </script>
+</body>
+</html>

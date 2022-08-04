@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let sueldosTotal = 0; 
+        let sueldoEmpleado;
+        let sueldosMenores= 0;
+        let sueldosMayores = 0;
+        
+        for (let i = 0; i < 5; i++) {
+                sueldoEmpleado = parseInt(prompt("Ingrese su sueldo"))
+                sueldosTotal += sueldoEmpleado
+
+            if (sueldoEmpleado >= 100 && sueldoEmpleado <= 300) {
+                sueldosMenores++
+            }
+            else{
+                sueldosMayores++
+            }
+        }
+
+        document.write("Cantidad de sueldos entre $100 y $300: ", sueldosMenores, ", cantidad de sueldos mayores de $300: ",sueldosMayores, "<br> Cantidad $ que abona la empresa: $", sueldosTotal)
+
+    </script>
+</body>
+</html>

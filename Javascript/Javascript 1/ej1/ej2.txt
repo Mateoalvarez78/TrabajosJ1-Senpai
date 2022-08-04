@@ -1,0 +1,10 @@
+let variable = true;                Buleano 
+let variable =  22.8                Numerico
+let variable = “Hola a todos”       Str
+let variable = null                 No inicializado
+let variable = 77                   Numerico
+let variable = 11 + “1”;            Numerico + Str
+let variable = {                    Objeto (str)
+	nombre : “Juan”, 
+	edad: 22
+}

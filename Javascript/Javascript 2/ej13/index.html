@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let trianguloEscaleno = 0;
+        let trianguloEquilatero = 0;
+        let trianguloIsosceles = 0;
+
+        
+        for (let i = 1; i <= 4; i++) {
+            let lado1 = parseInt(prompt("Ingrese un lado"))
+            let lado2 = parseInt(prompt("Ingrese segundo lado"))
+            let lado3 = parseInt(prompt("Ingrese tercer lado"))
+
+            if (lado1 === lado2 && lado1 === lado3){
+                trianguloEquilatero++
+                document.write("Triangulo ", i, " es Equilatero <br>")
+            }
+            else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3){
+                trianguloIsosceles++
+                document.write("Triangulo ", i, " es Isosceles <br>")
+            }
+
+            else {
+                trianguloEscaleno++
+                document.write("Triangulo ", i, " es Escaleno <br>")
+            }
+        }
+
+                document.write ("Cantidad de triangulos Equilateros: ", trianguloEquilatero, "<br> Cantidad de triangulos Isosceles: ",         trianguloIsosceles, "<br> Cantidad de triangulos Escalenos: ", trianguloEscaleno, "<br>" )
+
+        if (trianguloEquilatero > trianguloEscaleno && trianguloEscaleno > trianguloIsosceles) {
+
+            document.write("Triangulos con menor cantidad: triangulo Isosceles")
+        } else if (trianguloIsosceles > trianguloEscaleno && trianguloEquilatero > trianguloEscaleno) {
+
+            document.write("Triangulos con menor cantidad: triangulo Escaleno")
+        } else {
+
+            document.write("Triangulos con menor cantidad: triangulo Equilatero")
+        }
+
+    </script>
+</body>
+</html>

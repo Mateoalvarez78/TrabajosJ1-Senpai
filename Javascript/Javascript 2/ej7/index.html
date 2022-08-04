@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      let lista1 = 0;
+      let lista2 = 0;
+      let cantLista1;
+      let cantLista2;
+
+      for (let i = 0; i < 3; i++) {
+        cantLista1 = parseInt(prompt("Ingrese su número: lista1"))
+        lista1 += cantLista1
+      }
+
+      for (let x = 0; x < 3; x++) {
+        cantLista2 = parseInt(prompt("Ingrese su número: lista2"))
+        lista2 += cantLista2
+      }
+
+      if (lista1 > lista2) {
+        document.write("Lista 1 es mayor que lista 2, lista 1: ",lista1, " lista 2: ",lista2 )
+      }
+
+      else if (lista2 > lista1) {
+        document.write("Lista 2 es mayor que lista 1, lista 2: ",lista2, " lista 1: ",lista1 )
+      }
+
+      else {
+        document.write("Las listas son iguales")
+      }
+
+      console.log(lista1, lista2)
+
+    </script>
+</body>
+</html>

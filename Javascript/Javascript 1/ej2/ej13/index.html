@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let numero = parseInt(prompt("Ingrese un numero de uno, dos o dígitos"))
+
+if (numero >= 100 && numero < 1000) {
+    document.write("Ingresó un numero de tres dígitos")
+}
+
+else if (numero >= 10 && numero < 100) {
+    document.write("Ingresó un numero de dos dígito")
+}
+
+else if (numero > 0 && numero <10) {
+    document.write("Ingresó un numero de un dígito")
+}
+
+else if (numero < 0){
+    document.write("Ingresó un número negativo")
+}
+
+else {
+    document.write("Ingresó 0")
+}
+
+
+    </script>
+</body>
+</html>

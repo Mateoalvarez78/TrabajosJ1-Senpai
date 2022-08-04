@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let cantidad = parseInt(prompt("Cuantos cuadrantes va a ingresar?"))
+        let cuadrante1 = 0;
+        let cuadrante2 = 0;
+        let cuadrante3 = 0;
+        let cuadrante4 = 0;
+
+        for (let i = 1; i <= cantidad; i++){
+
+            let ejeX = parseInt(prompt("Ingrese el primer valor"))
+            let ejeY = parseInt(prompt("Ingrese el segundo valor"))
+
+            if (ejeX > 0 && ejeY > 0){
+                cuadrante1++
+            }
+            else if (ejeX > 0 && ejeY < 0) {
+                cuadrante2++
+            }
+            else if (ejeX < 0 && ejeY < 0) {
+                cuadrante3++
+            }
+            else if ( ejeX < 0 && ejeY > 0) {
+                cuadrante4++
+            }
+            else {
+                alert ("Se encuentra en el punto 0")
+            }
+
+            console.log(ejeX, ejeY)
+        }
+
+        document.write("Cantidad de puntos en el cuadrante 1: ", cuadrante1)
+        document.write("<br> Cantidad de puntos en el cuadrante 2: ", cuadrante2)
+        document.write("<br> Cantidad de puntos en el cuadrante 3: ", cuadrante3)
+        document.write("<br> Cantidad de puntos en el cuadrante 4: ", cuadrante4)
+
+
+    </script>
+</body>
+</html>

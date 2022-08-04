@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let edades1;
+        let acumulador1 = 0
+        for (let i = 0; i < 5; i++) {
+            edades1 = parseInt(prompt("Turno de la mañana: Ingresen sus edades: "))
+            acumulador1 = acumulador1 + edades1; 
+            console.log("Mañana: ",edades1)
+        }
+        let promedio1 = acumulador1 / 5
+        document.write("El turno de la mañana tiene un promedio de: ",promedio1)
+
+
+
+        let edades2;
+        let acumulador2 = 0
+        for (let i = 0; i < 6; i++) {
+            edades2 = parseInt(prompt("Turno de la tarde: Ingresen sus edades: "))
+            acumulador2 = acumulador2 + edades2; 
+            console.log("Tarde: ",edades2)
+        }
+        let promedio2 = acumulador2 / 6
+        document.write("<br> El turno de la tarde tiene un promedio de: ",promedio2)
+
+
+
+        let edades3;
+        let acumulador3 = 0
+        for (let i = 0; i < 11; i++) {
+            edades3 = parseInt(prompt("Turno de la noche: Ingresen sus edades: "))
+            acumulador3 = acumulador3 + edades3; 
+            console.log("Noche: ",edades3)
+        }
+        let promedio3 = acumulador3 / 11
+        document.write("<br> El turno de la noche tiene un promedio de: ",promedio3)
+
+        if (promedio1 > promedio2 && promedio1 > promedio3) {
+            document.write("<br> El promedio más grande es el turno de la mañana")
+        } 
+        else if (promedio2 > promedio3) {
+            document.write("<br> El promedio más grande es el turno de la tarde")
+        }
+        else {
+            document.write("<br> El promedio más grande es el turno de la noche")
+        }
+
+
+
+    </script>
+</body>
+</html>

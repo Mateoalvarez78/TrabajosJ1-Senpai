@@ -1,0 +1,11 @@
+  numero                    variable
+  porcentaje_acumulado      variable
+  estado-civil              variable
+  3presupuestos             No variable
+ _estimacion                No variable
+ let                        No variable
+ presupuestos3              variable
+ /casa                      No variable
+ ValordeVariable            variable
+ Numero                     No variable
+ var                        No variable

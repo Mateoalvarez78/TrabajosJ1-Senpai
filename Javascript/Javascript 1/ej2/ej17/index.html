@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let cantMoneda10 = 0;
+        let cantMoneda5 = 0;
+        let moneda10 = 10;
+        let moneda5 = 5;
+        let billete = parseInt(prompt("Ingrese el billete con el que va a abonar"))
+        let producto;
+        let cambio;
+        let cambioDevuelto;
+
+        if (billete == 50 || billete == 100 || billete == 200 || billete == 500 || billete == 1000 || billete == 2000) {
+
+            producto = parseInt(prompt("Ingrese el costo del producto"))
+            if ((producto % 5) == 0) {
+                cambioDevuelto = billete - producto
+                cambio = billete - producto;
+                console.log(cambio)
+            
+            
+                 for (let i = 0; cambio >=  10 && cantMoneda10 < 30; i++) {
+                    cambio = cambio - moneda10
+                    cantMoneda10 ++
+                    console.log(cambio, cantMoneda10)
+                    }   
+                
+            
+                for (let x = 0; cambio >0 && cantMoneda5 < 50; x++) {
+                    cambio = cambio - moneda5
+                    cantMoneda5 ++
+                    console.log(cambio, cantMoneda5)
+                    }
+                
+                }
+
+            }
+            else {
+                alert("Solo se aceptan billetes Uruguayos ($50 $100 $200 $500 $1000 $2000)")
+            }
+            
+            if (cambio > 0) {
+                document.write("Cambio insuficiente, faltan: $", cambio)
+            }
+            else {
+            document.write("Cantidad a devolver: $", cambioDevuelto, " se entregó monedas de $10: ", cantMoneda10, " y monedas de $5: ", cantMoneda5)
+            }
+    </script>
+
+</body>
+</html>
